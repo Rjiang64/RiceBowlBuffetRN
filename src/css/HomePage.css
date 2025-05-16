@@ -1,0 +1,188 @@
+.homepage {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 3rem 4rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0 6px 10px -2px rgba(134, 118, 131, 0.6);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* was 0.3, now stronger */
+  z-index: 0;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 8px rgba(112, 18, 18, 0.8);
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.order-btn {
+  background-color: #e65848; /* red-orange shade */
+  color: white;
+  padding: 1rem 2.5rem; /* Bigger button size */
+  border: none;
+  border-radius: 999px; /* full pill shape */
+  font-weight: bold;
+  font-size: 1rem; /* Keep same text size */
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2vh;
+}
+
+.order-btn:hover {
+  background-color: #d0453a;
+}
+
+/* Carousel Section */
+.carousel-section {
+  padding: 4rem;
+  padding-top: 3rem;
+}
+
+.carousel-section h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  color: white; /* match dark theme */
+}
+
+/* Scrollable container */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.25rem;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+  padding-bottom: 1rem;
+
+  /* Hide scrollbar - all browsers */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+  touch-action: pan-x; /* mobile swipe support */
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Each image */
+.carousel img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.03);
+}
+
+/* Info Grid */
+.info-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #eee;
+  padding: 1.5rem;
+  border-radius: 8px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card.large {
+  grid-column: span 2;
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  text-align: center;
+}
+
+.newsletter h3 {
+  margin-bottom: 1rem;
+}
+
+.newsletter input {
+  padding: 0.5rem;
+  width: 250px;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: orange;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links div {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #ccc;
+}

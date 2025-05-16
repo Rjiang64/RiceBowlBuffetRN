@@ -1,0 +1,22 @@
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #222831;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-header nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #e6bbbb;
+}
+
+.logo-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
